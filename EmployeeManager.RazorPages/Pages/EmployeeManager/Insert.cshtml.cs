@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace EmployeeManager.RazorPages.Pages
 {
-  
+    [Authorize(Roles = "Manager")]
     public class InsertModel : PageModel
     {
         private readonly AppDbContext db = null;

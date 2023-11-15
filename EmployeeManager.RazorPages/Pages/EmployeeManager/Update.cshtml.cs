@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManager.RazorPages.Pages
 {
-    
+    [Authorize(Roles = "Manager")]
     public class UpdateModel : PageModel
     {
         private readonly AppDbContext db = null;

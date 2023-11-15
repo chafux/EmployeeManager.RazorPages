@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeManager.RazorPages.Pages
 {
-    
+    [Authorize(Roles = "Manager")]
     public class DeleteModel : PageModel
     {
         private AppDbContext db = null;
